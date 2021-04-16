@@ -1,0 +1,98 @@
+body {
+  background: black;
+  color: white;
+  margin: 0px;
+}
+#form textarea {
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: #3F4156;
+  outline: none;
+  width: 65%;
+  padding: 10px;
+}
+#form button {
+  box-sizing: border-box;
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  right: 0px;
+  outline: none;
+}
+#form {
+  margin: 0px; 
+  position: fixed;
+  bottom: 0px;
+  background-color: #3F4156;
+  width: 100%;
+  outline: none;
+}
+#navigations {
+  background: #3F4156;
+  padding: 10px;
+  text-align: center;
+}
+#navigations .parent {
+  padding: 10px;
+  border: 1px solid white;
+  display: inline-block;
+}
+.parent .chatbox {
+  text-align: center;
+  position: absolute;
+  left: 8%;
+  width: 80%;
+  height: 60%;
+  padding: 10px;
+  top: 100px;
+  background: #656569;
+  overflow-x: hidden;
+  border-radius: 10px;
+}
+.parent:hover {
+  background: green;
+}
+#navigations button {
+  background: none;
+  border: none;
+  outline: none;
+}
+.save_getters {
+  color: white;
+  border: 1px solid white;
+}
+.reciever {
+  display: inline-block;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid gold;
+  width: 260px;
+  color: white;
+  padding: 5px;
+}
+#send:active {
+  background: black;
+  color: white;
+}
+#chatting div {
+  position: relative;
+}
+#chatting {
+  position: absolute;
+  display: block;
+  background: #DBDDEF;
+  text-align: left;
+  overflow-x: hidden;
+  top: 70px;
+  padding: 10px;
+  width: 85%;
+  height: 70%;
+  border-radius: 10px;
+}

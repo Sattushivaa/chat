@@ -1,0 +1,23 @@
+<button id="room_mod_btn">Room</button>
+
+
+
+var parents = document.getElementsByClassName('parent');
+
+function init(){
+  for(let i = 0; i < parents.length; i ++){
+    parents[i].style.backgroudColor = 'transparent';
+    chatbox.innerHTML = '';
+  }
+}
+document.getElementById('room_mod_btn').addEventListener('click',function(evt){
+  init();
+  parents[0].style.backgroudColor = 'gold'
+});
+document.getElementById('social_mod_btn').addEventListener('click',function(evt){
+  init();
+  parents[1].style.backgroud = 'gold';
+});
+document.getElementById('single_mod_btn').addEventListener('click',function(evt){
+  init();
+});
