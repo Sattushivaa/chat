@@ -1,30 +1,6 @@
 console.log('Hello World!');
 
-var mod = 'room';
-var to_ = 'shivam';
-var from_ = 'satyam';
-var type_ = 'none';
-var body_ = '';
-
-var username = document.getElementById('user_name').onchange = (evt) => {
-  from_ = evt.target.value;
-}
-var text = document.getElementById('text_to_send').onchange = (evt) => {
-  body_ = evt.target.value;
-}
-var sender = document.getElementById('send').onclick = () => {
-  server.send(JSON.stringify(jsonify()));
-}
-var chatbox = document.getElementById('chatting');
-
-
-
-document.getElementById('reciever').onchange = function(evt){
-  to_ = evt.target.value;
-  evt.target.value += ' ...connecting...';
-  console.log(to_);
-  evt.target.value = evt.target.value.replace('...connecting...','✓');
-};
+document.body.style.backgroundSize = `${screen.availWidth}px ${screen.availHeight}px`;
 
 function jsonify(){
   var obj = {
@@ -35,4 +11,32 @@ function jsonify(){
   }
   return obj;
 }
+
+var mod = 'room';
+var to_ = 'shivam';
+var from_ = 'satyam';
+var type_ = 'none';
+var body_ = '';
+
+var send_btn = document.getElementById('send');
+
+var textchange = (evt) => {
+  body_ = evt.target.value;
+}
+document.getElementById('text_to_send').addEventListener('onchange',textchange)
+var sendinfo = () => {
+  body_ = document.getElementById('text_to_send').value;
+  server.send(JSON.stringify(jsonify()));
+  document.getElementById('text_to_send').value = '';
+  console.log('info sent');
+}
+
+send_btn.addEventListener('click',sendinfo);
+
+document.getElementById('reciever').onchange = function(evt){
+  to_ = evt.target.value;
+  evt.target.value += ' ...connecting...';
+  console.log(to_);
+  evt.target.value = evt.target.value.replace('...connecting...','✓');
+};
 

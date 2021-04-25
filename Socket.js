@@ -10,10 +10,16 @@ server.addEventListener("open",function(evt){
    console.log(message);
   
    if(message.from != to_){
-     chatbox.innerHTML += `<div style='margin:0px; background:brown; height: auto; width: 8em; margin: 2px ; border-radius: 10px; padding:5px;'>${ message.body }</div>`;
+     document.body.innerHTML += `  <div class="message" align="right">
+         <div class="glass">${message.body}</div>
+       </div>`;
    } else {
      if(message.to == from_){
-     chatbox.innerHTML += `<div style='margin:0px; background:blue; height: auto; width: 8em; margin: 2px ; border-radius: 10px; padding:5px; margin-left:90px'>${ message.body }</div>`;
+     document.body.innerHTML += `  <div class="message" align="left">
+         <div class="glass-recieved">${message.body}</div>
+       </div>`;
    }}
+   
+
    
    })

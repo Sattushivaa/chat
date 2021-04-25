@@ -1,98 +1,91 @@
 body {
+  font-size: 15pt;
   background: black;
   color: white;
+  padding: 0px;
   margin: 0px;
+  background: url(Colors.png);
 }
-#form textarea {
-  color: white;
-  margin: 10px;
-  border-radius: 10px;
-  height: 50px;
-  border: 1px solid white;
-  background-color: #3F4156;
-  outline: none;
-  width: 65%;
+
+#tofrom {
+  background: #FFFFFF75;
   padding: 10px;
+  margin: 0px;
+  position: sticky;
+  top: 0px;
+  text-align: center;
 }
-#form button {
+
+.input {
   box-sizing: border-box;
-  position: fixed;
-  height: 60px;
-  width: 60px;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 50px;
-  right: 0px;
+  padding: 5px;
+  border: none;
+  background: #FFFFFF75;
+  width: 48%;
+  color: black;
+  border-bottom: 1px solid black;
   outline: none;
+  border-radius: 5px 5px 0px 0px;
 }
-#form {
-  margin: 0px; 
+
+.message {
+  width: 100%;
+}
+
+#send-form {
+  background: #FFFFFF75;
+  width: 100%;
+  padding: 10px;
   position: fixed;
   bottom: 0px;
-  background-color: #3F4156;
-  width: 100%;
+}
+
+#send-form textarea {
+  background: #FFFFFF75;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid black;
   outline: none;
-}
-#navigations {
-  background: #3F4156;
+  box-sizing: border-box;
   padding: 10px;
-  text-align: center;
+  resize: both;
+  scrollbar-color: blue;
+  scrollbar-width: 10px;
 }
-#navigations .parent {
-  padding: 10px;
-  border: 1px solid white;
+
+.glass {
   display: inline-block;
-}
-.parent .chatbox {
-  text-align: center;
-  position: absolute;
-  left: 8%;
-  width: 80%;
-  height: 60%;
-  padding: 10px;
-  top: 100px;
-  background: #656569;
-  overflow-x: hidden;
-  border-radius: 10px;
-}
-.parent:hover {
-  background: green;
-}
-#navigations button {
-  background: none;
-  border: none;
-  outline: none;
-}
-.save_getters {
+  margin: 5px;
+  margin-right: 10px;
+  background: #FFFFFF21;
+  webkit-background-filter: blur(4px);
   color: white;
-  border: 1px solid white;
+  opacity: 1;
+  padding: 10px;
+  margin-left: 30%;
+  border-radius: 10px 10px 0px 10px;
+  width: auto;
 }
-.reciever {
+
+.glass-recieved {
   display: inline-block;
+  margin: 5px;
+  margin-left: 10px;
+  background: #FFFFFF21;
+  webkit-background-filter: blur(4px);
+  color: white;
+  opacity: 1;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0px;
+  margin-right: 20%;
+  text-anchor: end;
+  width: auto;
+}
+#send {
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid white;
   background: transparent;
   outline: none;
-  border: none;
-  border-bottom: 2px solid gold;
-  width: 260px;
-  color: white;
-  padding: 5px;
-}
-#send:active {
-  background: black;
-  color: white;
-}
-#chatting div {
-  position: relative;
-}
-#chatting {
-  position: absolute;
-  display: block;
-  background: #DBDDEF;
-  text-align: left;
-  overflow-x: hidden;
-  top: 70px;
-  padding: 10px;
-  width: 85%;
-  height: 70%;
-  border-radius: 10px;
+  margin-left: 5px;
 }

@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <div id="navigations">
-      
-      <input style="margin-bottom: 10px;
-      background: transparent; color: white; border: none; border-bottom: 1px solid white; outline: none" type="text" id="user_name" placeholder="please write your username"/>
-      <br />
-      
-      
-      
-      <div class="parent">
-        <div class="chatbox" id="chatbox">
-          
-          <div style="position: absolute; background: black; height: auto; padding: 10px; margin: 0px; top: 15px;border-radius: 10px" id="room_inputs" class="inputs">
-            
-          <input type="text" id="reciever" placeholder="room name" class="reciever"/>
-          </div>
-        
-        
-        <div id="chatting"></div>
-        
-          
-          
-        </div>
-      </div>
-      
-      
-    </div>
-    
-    
-    
-    <div id="form">
-      <textarea type="text" id="text_to_send"></textarea>
-      <button type="" id="send">Send</button>
-    </div>
-    
-    <script src="main.js"></script>
-    <script src="Socket.js" type="text/javascript" charset="utf-8"></script>
+  
+  <datalist id="mods">
+    <option value="public">public</option>
+  </datalist>
+  
+  
+  <div id="tofrom">
+    <input class="input" id="reciever" type="text" placeholder="recipient"/>
+    <input class="input" id="user_name" type="text" placeholder="sender" />
+  </div>
+  <!-- Project -->
+  
+  
+  <div id="send-form">
+    <textarea id="text_to_send" rows="1" cols="36" ></textarea>
+    <button onclick="sendinfo()" id="send">send</button>
+  </div>
+  
+  
+  <script src="main.js"></script>
+  <script src="Socket.js" type="text/javascript" charset="utf-8"></script>
 </body>
+
 </html>
